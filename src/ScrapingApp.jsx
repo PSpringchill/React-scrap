@@ -9,7 +9,7 @@ const ScrapingApp = () => {
   const fetchData = async () => {
     try {
       // Adjust the endpoint or parameters as needed for your backend implementation
-      const response = await axios.get('https://react-scrap.vercel.app/googleSearch', {
+      const response = await axios.get('http://localhost:3001/googleSearch', {
         params: { query }
       });
       setScrapedData(response.data);
