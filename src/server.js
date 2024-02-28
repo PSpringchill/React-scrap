@@ -3,7 +3,7 @@ const cors = require('cors');
 const puppeteer = require('puppeteer');
 
 const app = express();
-app.use(cors({ origin: 'https://scrap.springchill.site/' }));
+app.use(cors());
 
 app.get('/googleSearch', async (req, res) => {
   if (!req.query.query) {
